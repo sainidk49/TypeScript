@@ -20,7 +20,7 @@ data = { _id: "abcd123", userName: "deepak123", age: 25 }
 
 
 //////////// identify parameter ///////////
-function passPerameter(id: number | string) {
+function passPerameter(id: number | string): number | string{
     if (typeof id === 'string') {
         id = id.toUpperCase();
     }
@@ -42,3 +42,4 @@ const arr5: (string | number | boolean)[] = [1, 2, 3, "4", true] //// u can use 
 let seatAllowCation: "midle" | "upper" | "lower";
 seatAllowCation = "midle" //// it allows 
 // seatAllowCation = "xyz" //// it not allow
+// seatAllowCation = 123 //// it not allow
